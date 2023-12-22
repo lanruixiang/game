@@ -17,7 +17,7 @@
         }
         .out{
             width: 450px;
-            height: 100px;
+            height: 115px;
             background-color: white;
             padding: 40px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -61,7 +61,8 @@
         }
         function goto(){
             var str = document.getElementById('pass').value;
-            if(str=="62801226"){
+            if(str=="7ajxhj27ji"){
+                document.getElementById('shit').innerText="";
                 var s="p3x519xh-a*jq51!6f2e";
                 var p="";
                 for(var i=1;i<=19;i++){
@@ -70,6 +71,8 @@
                     }
                 }
                 window.open("https://www.luogu.com.cn/paste/"+p);
+            }else{
+                document.getElementById('shit').innerText="密码错误";
             }
         }
     </script>
@@ -79,6 +82,7 @@
         <div class="input">
             <p>请输入密码：</p>
             <input type="password" id="pass" required>
+            <p id="shit" style="color: red;font-size: 13px;"></p>
             <button class="button" onclick="goto();">确定</button>
         </div>
     </div>
